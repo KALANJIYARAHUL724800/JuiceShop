@@ -1,0 +1,61 @@
+.root {
+    -fx-background-image: url('../Css/newbackground.png');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.croot {
+    -fx-background-image: url('../Css/salseorangebackground.jpeg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.filter-button {
+    -fx-background-image: url('../Css/filter.png');
+    -fx-background-size: contain;
+    -fx-background-radius: 100px;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-text-fill: transparent;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+}
+.table-view {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #b0b0b0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #343a40;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: #dee2e6;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f1f3f5;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}
+
+.table-cell {
+    -fx-padding: 5px;
+    -fx-alignment: CENTER;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.SalsemanScreenController">
+   <children>
+      <TableView fx:id="tabledata" layoutX="254.0" layoutY="90.0" prefHeight="214.0" prefWidth="305.0">
+        <columns>
+          <TableColumn fx:id="table_id" prefWidth="98.0" text="ID" />
+          <TableColumn fx:id="table_salsemanname" prefWidth="206.0" text="SALSE MAN NAME" />
+        </columns>
+      </TableView>
+      <TextField fx:id="id_entry" layoutX="57.0" layoutY="146.0" promptText="Enter the id" />
+      <TextField fx:id="salseman_name_entry" layoutX="57.0" layoutY="244.0" promptText="Salse man name" />
+      <Label layoutX="116.0" layoutY="103.0" text="ID">
+         <font>
+            <Font name="Consolas" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="198.0" text="Salseman Name">
+         <font>
+            <Font name="Consolas" size="21.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="153.0" layoutY="318.0" prefHeight="50.0" prefWidth="289.0">
+        <buttons>
+          <Button fx:id="Add_Button" mnemonicParsing="false" onAction="#Add" text="Add" />
+            <Button fx:id="Update_Button" mnemonicParsing="false" onAction="#Update" text="Update" />
+            <Button fx:id="Delete_Button" mnemonicParsing="false" onAction="#Delete" text="Delete" />
+        </buttons>
+      </ButtonBar>
+      <Label layoutX="208.0" layoutY="22.0" text="Salseman Details">
+         <font>
+            <Font name="Consolas" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

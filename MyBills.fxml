@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.BillPageController">
+   <children>
+      <ScrollPane fx:id="data" layoutX="11.0" layoutY="60.0" prefHeight="351.0" prefWidth="279.0">
+        <content>
+          <AnchorPane fx:id="BillData" minHeight="0.0" minWidth="0.0" prefHeight="293.0" prefWidth="191.0" />
+        </content>
+      </ScrollPane>
+      <Label layoutX="85.0" layoutY="15.0" text="Sales Invoice">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ToggleButton layoutX="45.0" layoutY="448.0" mnemonicParsing="false" onAction="#OK" prefHeight="30.0" prefWidth="100.0" text="OK" />
+      <ToggleButton layoutX="167.0" layoutY="448.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="30.0" prefWidth="100.0" text="Cancel" />
+   </children>
+</AnchorPane>

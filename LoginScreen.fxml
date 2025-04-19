@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="login" stylesheets="@../Css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.LoginScreenController">
+   <children>
+      <ToggleButton layoutX="253.0" layoutY="263.0" mnemonicParsing="false" onAction="#LOGIN" prefHeight="42.0" prefWidth="149.0" styleClass="lbutton" stylesheets="@../Css/styles.css" text="Login" />
+      <TextField fx:id="username_Entry" layoutX="282.0" layoutY="124.0" />
+      <TextField fx:id="password_Entry" layoutX="282.0" layoutY="182.0" />
+      <Label fx:id="username_label" layoutX="178.0" layoutY="127.0" text="User Name" textFill="#02f8f4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="password_label" layoutX="181.0" layoutY="188.0" text="Password" textFill="#05deff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="login_label" layoutX="260.0" layoutY="26.0" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="login_date" layoutX="416.0" layoutY="30.0" prefHeight="25.0" prefWidth="158.0" />
+      <ProgressBar fx:id="progressdata" layoutX="173.0" layoutY="347.0" prefHeight="7.0" prefWidth="294.0" progress="0.0" />
+
+   </children>
+</AnchorPane>

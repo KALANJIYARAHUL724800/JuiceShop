@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.SearchBillScreenController">
+   <children>
+      <TextField fx:id="billEntry" layoutX="816.0" layoutY="100.0" onAction="#OK_Button" />
+      <TableView fx:id="table_data" layoutX="16.0" layoutY="152.0" prefHeight="328.0" prefWidth="969.0" stylesheets="@../Css/billscreenstyle.css">
+         <columns>
+            <TableColumn fx:id="billno_Col" prefWidth="75.0" text="BillNo" />
+            <TableColumn fx:id="cusname_Col" prefWidth="113.66667175292969" text="Customer Name" />
+            <TableColumn fx:id="cusmobileno_Col" prefWidth="125.33334350585938" text="Customer Mobile No" />
+            <TableColumn fx:id="salseman_Col" prefWidth="125.66665649414062" text="SalesMan" />
+            <TableColumn fx:id="itemname_Col" prefWidth="110.66668701171875" text="Item Name" />
+            <TableColumn fx:id="qty_Col" prefWidth="79.0" text="Qty" />
+            <TableColumn fx:id="price_Col" prefWidth="79.0" text="Price" />
+            <TableColumn fx:id="netvalue_Col" prefWidth="91.0" text="NetValue" />
+            <TableColumn fx:id="itemcode_Col" prefWidth="67.0" text="ItemCode" />
+            <TableColumn fx:id="date_Col" prefWidth="97.66668701171875" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="427.0" layoutY="27.0" prefHeight="54.0" prefWidth="200.0" text="Bill Search">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="738.0" layoutY="99.0" text="Bill No">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="total_amount_label" layoutX="471.0" layoutY="491.0" text="0.00 Rs" textFill="#09e823">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="502.0" text="Total">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ToggleButton layoutX="883.0" layoutY="517.0" mnemonicParsing="false" onAction="#Print_Button" prefHeight="39.0" prefWidth="77.0" text="Print">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </ToggleButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+/* Set background image for the AnchorPane */
+.root {
+    -fx-background-image: url('../Css/Stock%20Area.png');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+.add-button {
+    -fx-background-image: url('../Css/add.png');
+    -fx-background-size: contain;
+    -fx-background-radius: 100px;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-text-fill: transparent;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+}
+.update-button {
+    -fx-background-image: url('../Css/update.png');
+    -fx-background-size: contain;
+    -fx-background-radius: 100px;
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-text-fill: transparent;
+    -fx-pref-width: 45px;
+    -fx-pref-height: 45px;
+}
+.delete-button {
+    -fx-background-image: url('../Css/delete.png');
+    -fx-background-size: contain;
+    -fx-background-radius: 100px;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-text-fill: transparent;
+    -fx-pref-width: 60px;
+    -fx-pref-height: 60px;
+}
+.pane {
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+}
+.login {
+    -fx-background-image: url('../Css/login.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.lbutton {
+    -fx-background-color: green; /* Button background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-padding: 8px 16px; /* Padding */
+    -fx-border-radius: 15px; /* Border radius */
+    -fx-background-radius: 15px; /* Background radius */
+    -fx-border-color: transparent; /* No border */
+    -fx-cursor: hand; /* Pointer cursor */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+}
+
+/* Button Hover Effect */
+.lbutton:hover {
+    -fx-background-color: #228B22; /* Darker Green */
+}
+
+/* Button Pressed Effect */
+.lbutton:pressed {
+    -fx-background-color: #1E7A1E;
+}
